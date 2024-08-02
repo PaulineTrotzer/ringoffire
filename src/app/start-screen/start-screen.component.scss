@@ -1,32 +1,23 @@
-.start-screen {
+.startscreen-button-box {
+  position: relative; /* Wichtig für das absolute Positionieren des Start-Buttons */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  background-color: black;
-  background-image: url("./../../assets/img/fire_background.png");
+  height: 100vh; /* Füllt die gesamte Höhe des Bildschirms */
+  background-image: url('./../../assets/img/fire_background.png');
   background-size: cover;
-  background-position: center;
-}
-
-.startscreen-button-box {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  //width: 50%; - Breite nötig für pos. absolute?
 }
 
 .startscreen-only-button {
-  position: absolute;
-  bottom: 145px;
-  left: 47%; //Wieso bei diesen Einstellungen nicht 50%?//
-  transform: translate(-50%, 50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   > img {
+    width: 500px;
     cursor: pointer;
     object-fit: cover;
-    min-width: 500px;
     &:hover {
       filter: brightness(1.25);
     }
