@@ -4,9 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Füllt die gesamte Höhe des Bildschirms */
+  height: 100vh;
+  width: 100vw; /* Füllt die gesamte Höhe des Bildschirms */
   background-image: url('./../../assets/img/fire_background.png');
   background-size: cover;
+
+  @media(max-width: 690px){
+    >img{
+      width: 700px;
+      padding-left: 30px;
+    }
+  }
 }
 
 .startscreen-only-button {
@@ -20,6 +28,11 @@
     object-fit: cover;
     &:hover {
       filter: brightness(1.25);
+    }
+  }
+  @media(max-width: 690px){
+    >img{
+      width: 330px;
     }
   }
 }

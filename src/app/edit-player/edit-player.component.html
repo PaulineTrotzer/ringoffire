@@ -1,0 +1,11 @@
+
+<h1 mat-dialog-title>Edit player</h1>
+<div class="avatar-container">
+<img [mat-dialog-close]="picture" class="profile-picture" *ngFor="let picture of allProfilePictures; let i=index" src="assets/avatar_profile/{{picture}}">
+</div>
+
+<mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Close</button>
+    <button mat-button color="warn"  [mat-dialog-close]="'DELETE'" cdkFocusInitial>Delete player</button>
+  </mat-dialog-actions>
+  

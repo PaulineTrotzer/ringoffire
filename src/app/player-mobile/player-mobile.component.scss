@@ -1,0 +1,29 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  background-color: rgba(194, 188, 188, 0.4);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 8px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  > img {
+    margin-top: 10px;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+
+  > span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.player-active {
+  background-color: rgb(200, 55, 55) !important;
+  color: white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

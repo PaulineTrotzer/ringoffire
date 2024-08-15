@@ -12,6 +12,11 @@ export class PlayerComponent {
 
   @Input()nameOfPlayer = 'Player';
   @Input()playerActive = false;
+  @Input()profileImage = 'avatar.png';
 
+
+  ngOnInit() {
+    console.log('Profile Image:', this.profileImage);
+  }
 
 }

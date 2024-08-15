@@ -1,8 +1,26 @@
 * {
     box-sizing: border-box;
     margin: 0;
+ 
 }
 
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+//Die Regel gilt für Bildschirme, deren Breite 720px oder kleiner ist//
+@media(max-width: 720px){
+    .hide-for-mobile{
+        display: none;
+    }
+}
+
+
+//Die Regel gilt für Bildschrime, deren Breite 720px oder größer ist, Tablets, Laptops & Co//
+@media(min-width: 720px){
+    .hide-for-desktop{
+        display: none;
+    }
+}

@@ -1,3 +1,19 @@
 .mat-mdc-card-title {
-    padding: 8px 16px;
+  padding: 0 16px;
+  font-size: 24px;
+  padding-top: 5px;
+
+  @media (max-width: 720px) {
+    min-height: 60px;
+    font-size: 16px;
+  }
+}
+
+.mat-mdc-card-content {
+  font-size: 23px;
+  line-height: 31px;
+  @media (max-width: 720px) {
+    line-height: 20px;
+    font-size: 12px;
+  }
 }
